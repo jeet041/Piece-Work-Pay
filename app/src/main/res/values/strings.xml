@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">pwp</string>
+    <string name="seek">Job Seeker</string>
+    <string name="provide">Job Provider</string>
+    <string name="uname">Enter username/email</string>
+    <string name="pwd">Enter password</string>
+    <string name="login">Login</string>
+    <string name="reg">new user?</string>
+    <string name="regredir">sign up</string>
+    <string name="fname">enter first name</string>
+    <string name="mname">enter middle name</string>
+    <string name="lname">enter last name</string>
+    <string name="email">enter email address</string>
+    <string name="username">choose a username</string>
+    <string name="passwd">select a password</string>
+    <string name="addr">enter address</string>
+    <string name="dob">select date of birth</string>
+    <string name="already">already a user?</string>
+    <string name="signin">sign in</string>
+    <string name="fthname">enter fathers name</string>
+    <string name="cntry">select country</string>
+    <string name="phone">Enter phone number</string>
+    <string name="register">register</string>
+    <string name="urladdress">http://localhost</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

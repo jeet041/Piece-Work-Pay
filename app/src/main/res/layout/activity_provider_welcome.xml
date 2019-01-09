@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".provider_welcome"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/pname"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:hint="@string/uname" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:id="@+id/ppass"
+        android:inputType="textPassword"
+        android:hint="@string/passwd"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:id="@+id/plog"
+        android:text="login"
+        android:onClick="pvlogin"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="new user?"
+            />
+
+        <TextView
+            android:id="@+id/tvsign"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:text="signup"
+            android:onClick="pvreg"/>
+    </LinearLayout>
+</LinearLayout>

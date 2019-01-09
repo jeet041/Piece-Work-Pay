@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seeker_registration"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/fname1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="@string/fname"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/mname1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="@string/mname"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/lname1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="@string/lname"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/fthname1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="@string/fthname"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/unname1"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="choose a username"/>
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="choose a password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/dob1"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:onClick="datepick"
+            android:paddingLeft="3dp"
+            android:text="@string/dob"
+            android:textSize="18sp" />
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/dtpick1"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="dateselect"
+                android:id="@+id/dtselect1"
+                android:text="ok"/>
+        </DatePicker>
+
+        <EditText
+            android:id="@+id/phone1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="@string/phone"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/addr1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="@string/addr"
+            android:inputType="textPostalAddress" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:id="@+id/city1"
+            android:hint="enter city"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/state1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="select a state"
+            android:inputType="text" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:id="@+id/register1"
+            android:onClick="register1"
+            android:text= "@string/register"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/already"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/signin1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="144dp"
+                android:paddingLeft="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="login1"
+                android:text="@string/signin"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
